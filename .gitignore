@@ -1,3 +1,8 @@
+# Env Variables
+unsplashAccessKey
+weatherApiKey
+
+
 # Logs
 logs
 *.log
