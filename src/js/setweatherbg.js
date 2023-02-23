@@ -1,5 +1,5 @@
 // Set the weather background based on the user's location
-export const setWeatherBackground = async (weatherApiUrl, unsplashApiUrl) => {
+export const setWeatherBackground = async (weatherApiUrl, unsplashApiUrl, defaultBackgrounds) => {
   try {
     const response = await fetch(weatherApiUrl);
     const data = await response.json();
@@ -69,12 +69,17 @@ export const setWeatherBackground = async (weatherApiUrl, unsplashApiUrl) => {
     // Get a random background image from Unsplash based on the search query
     const response2 = await fetch(`${unsplashApiUrl}&query=${searchQuery}`);
     const data2 = await response2.json();
-    const imageUrl = data2.urls.full;
+    let imageUrl = data2.urls.full;
+
 
     // Set the background image in the HTML
     const backgroundElement = document.querySelector(".weather-background");
     backgroundElement.style.backgroundImage = `url(${imageUrl})`;
   } catch (error) {
-    console.error(error);
+    // Set the background image to a random image from the defaultBackgrounds array
+    const randomIndex = Math.floor(Math.random() * defaultBackgrounds.length);
+    const imageUrl = defaultBackgrounds[randomIndex];
+    const backgroundElement = document.querySelector('.weather-background');
+    backgroundElement.style.backgroundImage = `url(${imageUrl})`;
   }
 };

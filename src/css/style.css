@@ -44,6 +44,6 @@
   min-width: 300px;
 }
 
-.text-white {
-  color: #fff;
+#weather-container-content {
+  z-index: 1000;
 }
