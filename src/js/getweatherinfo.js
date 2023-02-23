@@ -11,8 +11,7 @@ export const getWeatherInfo = async (weatherApiUrl) => {
     // Set the weather information in the HTML
     const weatherInfo = document.getElementById("weather-info");
     if (weatherInfo) {
-      weatherInfo.innerHTML = `${temp_f}°F and ${condition.text.toLowerCase()} weather.`;
-      console.log("Weather info thing fired", `${weatherInfo.innerText}`);
+      weatherInfo.innerHTML = `It's ${temp_f}°F and ${condition.text.toLowerCase()} outside.`;
     }
 
     return {
