@@ -1,7 +1,7 @@
-import {  getWeatherInfo } from '/src/js/getweatherinfo.js';
-import {  setWeatherBackground } from '/src/js/setweatherbg.js';
-import {  unsplashAccessKey, weatherApiKey } from '/src/js/env.js';
-import '/src/css/style.css';
+import {  getWeatherInfo } from './js/getweatherinfo.js';
+import {  setWeatherBackground } from './js/setweatherbg.js';
+import {  unsplashAccessKey, weatherApiKey } from './js/env.js';
+import './css/style.css';
 import bg1 from './images/bg1.webp';
 import bg2 from './images/bg2.webp';
 import bg3 from './images/bg3.webp';
