@@ -3,7 +3,7 @@
 A simple web app that shows the current weather and sets a weather-related background image using the OpenWeatherMap and Unsplash APIs.
 Installation
 
-<img src="images/screenshot.png" alt="Screenshot of dynamic-weather-background in action">
+<img src="./src/images/screenshot.png" alt="Screenshot of dynamic-weather-background in action">
 
 ## Usage
 
