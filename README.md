@@ -20,7 +20,25 @@ npm install micah4thewin/dynamic-weather-background
 To use dynamic-weather-background in your HTML, add the following code:
 
 ```
-<div id="weather-container"></div>
+<!-- This is the main container for the dynamic weather background -->
+<div class="container-fluid d-flex" id="weather-container">
+
+    <!-- This row centers the content horizontally and aligns it vertically -->
+    <div class="row align-items-center w-100 justify-content-center mx-auto">
+
+        <!-- This column has a maximum width of 8 and is centered horizontally -->
+        <div class="col-md-8 text-center p-5" id="weather-container-content">
+
+            <!-- Your website's main headline -->
+            <h1 class="display-1 fw-bolder text-white my-2">WELCOME TO MY WEBSITE!</h1>
+
+            <!-- This element will display the weather information -->
+            <p class="text-light fs-4 fw-bold" id="weather-info"></p>
+
+        </div>
+    </div>
+</div>
+
 ```
 
 ### Usage in Node.js
