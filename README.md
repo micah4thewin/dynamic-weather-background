@@ -3,6 +3,8 @@
 A simple web app that shows the current weather and sets a weather-related background image using the OpenWeatherMap and Unsplash APIs.
 Installation
 
+<img src="images/screenshot.png" alt="Screenshot of dynamic-weather-background in action">
+
 ## Usage
 
 ### Installation
@@ -26,9 +28,9 @@ To use dynamic-weather-background in your HTML, add the following code:
 To use dynamic-weather-background in your Node.js environment, import the module and call the init() function with your configuration options:
 
 ```
-const dwb = require('dynamic-weather-background');
+import { init } from 'dynamic-weather-background/src/index.js';
 
-dwb.init({
+init({
   weatherApiKey: 'your_openweathermap_api_key',
   unsplashAccessKey: 'your_unsplash_access_key',
   opacity: 0.5,
