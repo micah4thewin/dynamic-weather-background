@@ -6,7 +6,7 @@ A simple web app that shows the current weather and sets a weather-related backg
 
 You can install dynamic-weather-background via npm by running the following command:
 
-```
+```js
 npm install micah4thewin/dynamic-weather-background
 ```
 
@@ -40,7 +40,7 @@ To use dynamic-weather-background in your HTML, add the following code:
 ### Usage in Node.js
 
 To use dynamic-weather-background in your Node.js environment, import the module and call the init() function with your configuration options:
-```
+```js
 import { init } from 'dynamic-weather-background/src/index.js';
 
 init({
