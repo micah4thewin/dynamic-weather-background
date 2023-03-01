@@ -47,3 +47,8 @@
 #weather-container-content{
   z-index: 1000;
 }
+
+#video1 {
+  background: solid;
+  background-color: #efefef;
+}

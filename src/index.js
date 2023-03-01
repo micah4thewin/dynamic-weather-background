@@ -1,6 +1,6 @@
 import {  getWeatherInfo } from './js/getweatherinfo.js';
 import {  setWeatherBackground } from './js/setweatherbg.js';
-import {  unsplashAccessKey, weatherApiKey } from './js/env.js';
+import {  unsplashAccessKey, weatherApiKey, location } from './js/env.js';
 import './css/style.css';
 import bg1 from './images/bg1.webp';
 import bg2 from './images/bg2.webp';
@@ -14,7 +14,8 @@ import bg9 from './images/bg9.webp';
 
 // Default configuration options
 const defaultConfig = {
-  weatherApiUrl: `https://api.weatherapi.com/v1/current.json?key=${weatherApiKey}&q=auto&units=imperial`,
+  location: location,
+  weatherApiUrl: `https://api.weatherapi.com/v1/current.json?key=${weatherApiKey}&q=${location}&units=imperial`,
   unsplashApiUrl: `https://api.unsplash.com/photos/random/?client_id=${unsplashAccessKey}&query=weather`,
   defaultBackgrounds: [bg1, bg2, bg3, bg4, bg5, bg6, bg7, bg8, bg9],
   opacity: 0.5,
@@ -23,6 +24,7 @@ const defaultConfig = {
   overlayClass: "overlay"
 };
 
+const deleteThis = '';
 export const init = (config) => {
   // Merge the provided configuration options with the defaults
   const mergedConfig = {
@@ -66,4 +68,4 @@ export const init = (config) => {
     });
 };
 
-init(defaultConfig);
+// init(defaultConfig);
