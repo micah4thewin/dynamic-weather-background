@@ -1,6 +1,6 @@
 # Dynamic Weather Background
 
-A simple web app that shows the current weather and sets a weather-related background image using the OpenWeatherMap and Unsplash APIs.
+A web app that shows the current weather and sets a weather-related background image using the weatherapi.com and Unsplash APIs.
 
 ## Installation
 
@@ -11,6 +11,12 @@ npm install micah4thewin/dynamic-weather-background
 ```
 
 ## Usage
+
+###  Getting your API keys
+
+  -https://www.weatherapi.com/
+
+  -https://unsplash.com/developers
 
 ### Adding to HTML
 
